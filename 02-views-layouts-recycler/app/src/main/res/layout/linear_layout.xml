@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+1. LinearLayout располагает view друг за другом по вертикали или горизонтали.
+2. Рекомендуется использовать такие веса, чтобы в сумме они давали 100 (так можно 1000, 10000 и тд)
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:text="@string/hello_world"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:text="@string/hello_world"
+        android:textSize="30sp" />
+</LinearLayout>

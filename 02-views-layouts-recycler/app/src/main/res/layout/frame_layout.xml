@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+1. Все размеры, отступы и дрыгие подобные атрибуты view элементов задаются с помощью
+констант (wrap_content или match_parent) или с помощью числовых значених в dp.
+2. Размеры текста (textSize) указываются в sp.
+3. FrameLayout не применяет никаких правил к позиционированию дочерних view элементов.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="@string/long_hello_world"
+        android:textSize="30sp" />
+</FrameLayout>
